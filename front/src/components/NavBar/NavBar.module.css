@@ -34,12 +34,22 @@
     transform: scaleX(1); 
     transform-origin: bottom left;
 }
+label{
+    display: flex;
+    color: white;
+    align-items: baseline;
+}
+p{
+    color: var(--color-yellow);
+    font-weight:bolder;
+}
 .buttons {
     padding: 5px;
     background-color: black;
     color: white;
     border: 1px solid white;
     transition: transform 0.3s ease;
+    margin-left: 1rem;
 }
 .buttons a {
     color: inherit;

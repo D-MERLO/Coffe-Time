@@ -1,17 +1,37 @@
-/* .title{
-    color: blueviolet;
-}
-.card{
-    color: rgb(221, 219, 219);
-    background-color: rgb(88, 88, 90);
-    margin: 20px 50px;
-    border-radius: 20px;
+.marco {
+    border: 2px solid black;
+    position: relative;
+    padding: 20px;
+    margin: 6rem 2rem 3rem 2rem;
+    height: auto;
+    overflow: visible;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
 }
-.container{
-    width: 90%;
-    height: 100%;
-} */
+
+.tituloMarco {
+    position: absolute;
+    font-size: 2rem;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    padding: 0 10px;
+    width: max-content;
+}
+.buttons{
+    background: var(--color-yellow);
+    border-radius: 20px;
+    font-family: 'Candal';
+    font-size: large;
+    color: black;
+    width: 20%;
+    padding: 5px ;
+    margin: 10px 0 7px 0;
+}
+.cafeFooter{
+    position: relative;
+    top: 10em;
+   
+}

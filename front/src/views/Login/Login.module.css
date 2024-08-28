@@ -1,25 +1,28 @@
-form{
+form {
     display: flex;
     flex-direction: column;
-    justify-content:space-around;
+    justify-content: space-around;
     width: 35vw;
     align-items: center;
 }
-.title{
+
+.title {
     font-weight: bold;
     font-size: 3rem;
     margin-bottom: 20px;
 }
-.buttons{
+
+.buttons {
     background: var(--color-yellow);
     border-radius: 20px;
     font-family: 'Candal';
     font-size: large;
     color: black;
     width: 100%;
-    padding: 5px ;
+    padding: 5px;
     margin-top: 7px;
 }
+
 .marco {
     border: 2px solid black;
     position: relative;
@@ -28,50 +31,60 @@ form{
     height: 50rem;
     overflow: visible;
 }
-.divForm{
+
+.divForm {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 5rem;
 }
-.divInput{
+
+.divInput {
     width: 35vw;
 }
-.input{
+
+.input {
     width: 100%;
     border: 1.5px solid black;
     border-radius: 10px;
     padding: 0.5rem 1rem;
     margin: 7px 0;
 }
-.noRegister{
+
+.noRegister {
     margin: 50px 0 2px 0;
-    font-size:x-large;
+    font-size: x-large;
+    color: black;
 }
-.link{
+
+.link {
     color: var(--color-yellow);
     font-size: larger;
     font-weight: 900;
 }
-.contorno1{
+
+.contorno1 {
     position: relative;
     height: 13rem;
     top: -25rem;
     left: -25rem;
 }
-.contorno2{
+
+.contorno2 {
     position: relative;
     height: 13rem;
     top: -31rem;
     left: -32rem;
 }
-.granosSupIzq{
+
+.granosSupIzq {
     position: relative;
     height: 10rem;
     top: -55rem;
     left: -35rem;
 }
-.cafeFooter{
+
+.cafeFooter {
     position: relative;
-top: -34rem;
+    top: -34rem;
 }

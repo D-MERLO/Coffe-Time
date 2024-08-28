@@ -1,54 +1,58 @@
-/* form{
+.marco {
+    border: 2px solid black;
+    position: relative;
+    padding: 20px;
+    margin: 6rem 2rem 3rem 2rem;
+    height: auto;
+    overflow: visible;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 90%;
-    height: 100%;
-    
-    margin: 20px 50px;
 }
-div{
-    background-color: rgb(56, 59, 59);
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 20px;
-}
-label{
-    color: rgb(221, 219, 219);
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: center;
-    margin: 5px;
-}
-.input{
-    background-color: rgb(66, 66, 66);
-    color: rgb(221, 219, 219);
-    padding: 5px;
-    border: 1px solid rgb(204, 200, 200);
-    border-radius: 20px;
-    margin: 1px;
+
+.tituloMarco {
+    position: absolute;
+    font-size: 2rem;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    padding: 0 10px;
     width: max-content;
 }
-.title{
-    color: rgb(233, 233, 233);
-    margin-top: 40px;
+.form{
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem
+}
+.dato{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+label{
+    font-weight: bold;
+}
+input, select{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
 }
 .buttons{
-    background-color: rgb(51, 51, 51);
-    padding: 5px;
-    border: 1px solid white;
-    border-radius: 10px;
-    color: beige;
-    margin-top: 10px;
-}
-button:hover{
-    background-color: rgb(224, 223, 223);
+    background: var(--color-yellow);
+    border: 2px solid black;
+    border-radius: 20px;
+    font-family: 'Candal';
+    font-size: large;
     color: black;
-    border: 1px solid rgb(0, 0, 0);
+    width: 100%;
+    padding: 5px ;
+    margin: 10px 0 7px 0;
 }
-input:hover{
-    background-color: rgb(83, 83, 83);
-} */
+.cafeFooter{
+    position: relative;
+    top: 10rem;
+   
+}

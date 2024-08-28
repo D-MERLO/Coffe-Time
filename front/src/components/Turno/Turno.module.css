@@ -1,23 +1,24 @@
-/* h4{
-    color: aliceblue;
-    margin-inline: 20px;
-}
-.card{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-.cancelButton{
-    color: aliceblue;
-    background-color: rgb(165, 165, 165);
-    border: 1px solid rgb(240, 240, 240);
+.button{
+    background-color: transparent;
+    border: 2px solid black;
     border-radius: 20px;
-    padding: 5px;
-    height: 30px;
+    padding: 0 30px;
+    font-family: "Candal";
 }
-.cancelButton:hover{
-    background-color: rgb(230, 11, 11);
+.button:hover {
+    border: 2px solid red;
+    color: red;
 }
-/* .status{
-    color: green;
-} */ 
+.turno{
+    display: flex;
+    justify-content: space-between;
+    width: 70vw;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 15px 10px;
+    margin: 10px ;
+}
+.datos{
+    font-size: medium;
+    margin: 2px 5px;
+}

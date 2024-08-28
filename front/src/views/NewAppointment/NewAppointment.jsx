@@ -96,11 +96,12 @@ const NewAppointment = () => {
     };
 
     return (
-        <div>
-            <h2 className={style.title}>Nueva Reserva</h2>
+        <div className={style.marco}>
+            <h2 className={style.tituloMarco}>Nueva Reserva</h2>
+            <div className={style.form}>
             <form onSubmit={handleSubmit}>
-                <div>
-                    <label>FECHA</label>
+                <div className={style.dato}>
+                    <label>Fecha</label>
                     <input
                         className={style.input}
                         type="date"
@@ -111,8 +112,8 @@ const NewAppointment = () => {
                     />
                     {errors.date && <span>{errors.date}</span>}
                 </div>
-                <div>
-                    <label>HORA</label>
+                <div className={style.dato}>
+                    <label>Hora</label>
                     <select
                         className={style.input}
                         name="time"
@@ -126,8 +127,8 @@ const NewAppointment = () => {
                     </select>
                     {errors.time && <span>{errors.time}</span>}
                 </div>
-                <div>
-                    <label>Número de Personas</label>
+                <div className={style.dato}>
+                    <label>Comensales</label>
                     <input
                         className={style.input}
                         type="number"
@@ -145,6 +146,8 @@ const NewAppointment = () => {
                     Solicitar
                 </button>
             </form>
+            </div>
+            <img className={style.cafeFooter} src="/cafeFooter.svg" alt="mancha y grano de café" />
         </div>
     );
 };

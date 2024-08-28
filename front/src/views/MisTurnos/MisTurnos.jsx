@@ -45,15 +45,15 @@ const MisTurnos = () => {
             {!user.name ? (
                 <div>Loading...</div>
             ) : (
-                <div className={style.container}>
-                    <h1 className={style.title}>Mis Reservas</h1>
-                    <button onClick={() => navigate("/newAppointment")}>Nueva Reserva</button>
+                <div className={style.marco}>
+                    <h2 className={style.tituloMarco}>Mis Reservas</h2>
+                    <button className={style.buttons} onClick={() => navigate("/newAppointment")}>Nueva Reserva</button>
                     <div>
                         {!appointments.length ? (
-                            <h4>No tienes reservas aún...</h4>
+                            <p>No tienes reservas aún...</p>
                         ) : (
                             appointments.map((appointment) => (
-                                <div className={style.card} key={appointment.id}>
+                                <div className={style.turno} key={appointment.id}>
                                     <Turno
                                         date={new Date(`${appointment.date}T${appointment.time}`).toLocaleDateString()}
                                         time={appointment.time}
@@ -65,6 +65,7 @@ const MisTurnos = () => {
                             ))
                         )}
                     </div>
+                    <img className={style.cafeFooter} src="/cafeFooter.svg" alt="mancha y grano de café" />
                 </div>
             )}
         </>

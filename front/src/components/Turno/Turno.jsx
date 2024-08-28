@@ -21,12 +21,12 @@ const Turno = ({ id, date, time, status, numberOfPeople }) => {
     };
 
     return (
-        <div className={style.card}>
-            <h4>Fecha: {date}</h4>
-            <h4>Horario: {time}</h4>
-            <h4>Mesa para: {numberOfPeople} {numberOfPeople === 1 ? 'persona' : 'personas'}</h4>
-            <h4 className={style[status]}>{status.toUpperCase()}</h4>
-            <button onClick={handleCancel}>Cancelar</button>
+        <div className={style.turno}>
+            <h3 className={style.datos}>Fecha: <br/> {date}</h3>
+            <h3 className={style.datos}>Horario: <br/> {time}</h3>
+            <h3 className={style.datos}>Mesa para: <br/> {numberOfPeople} {numberOfPeople === 1 ? 'persona' : 'personas'}</h3>
+            {/* <h4 className={style[status]}>{status.toUpperCase()}</h4> */}
+            <button className={style.button} onClick={handleCancel}>Cancelar</button>
         </div>
     );
 };

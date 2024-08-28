@@ -65,7 +65,7 @@ const Register = () => {
                         )
                     })
                     }
-                    <button className={style.buttons}disabled={errors.name || errors.username || errors.password || errors.nDni || errors.email} type='submit'>Registrarse</button>
+                    <button className={style.buttons} disabled={errors.name || errors.username || errors.password || errors.nDni || errors.email} type='submit'>Registrarse</button>
                 </form>
                 <img className={style.contorno1} src="/contornoCafe1.svg" alt="mancha contorno taza de café" />
                 <img className={style.contorno2} src="/contornoCafe2.svg" alt="mancha contorno taza de café" />
