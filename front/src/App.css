@@ -1,0 +1,8 @@
+html{
+    flex-direction: column;
+}
+:root{
+    overflow: hidden;
+    --color-yellow: #F3A918;
+    --color-brown: #401406;
+}

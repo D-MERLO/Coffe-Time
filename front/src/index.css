@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Candal&family=Cedarville+Cursive&family=Kaushan+Script&family=Klee+One&family=Lexend+Exa:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+p, h2{
+    font-family: 'Klee One', sans-serif;
+}
+h1 {
+    font-family: 'Lexend Exa', sans-serif;
+}
+h3{
+    font-family: 'Candal', sans-serif;
+}
+
+#root{
+    width: 100vw;
+    /* height: 100vh; */
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: rgb(255, 253, 252);
+    padding: 0;
+    overflow-x: hidden;
+}
+

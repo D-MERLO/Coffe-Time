@@ -1,0 +1,54 @@
+/* form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+    
+    margin: 20px 50px;
+}
+div{
+    background-color: rgb(56, 59, 59);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+}
+label{
+    color: rgb(221, 219, 219);
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin: 5px;
+}
+.input{
+    background-color: rgb(66, 66, 66);
+    color: rgb(221, 219, 219);
+    padding: 5px;
+    border: 1px solid rgb(204, 200, 200);
+    border-radius: 20px;
+    margin: 1px;
+    width: max-content;
+}
+.title{
+    color: rgb(233, 233, 233);
+    margin-top: 40px;
+}
+.buttons{
+    background-color: rgb(51, 51, 51);
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: beige;
+    margin-top: 10px;
+}
+button:hover{
+    background-color: rgb(224, 223, 223);
+    color: black;
+    border: 1px solid rgb(0, 0, 0);
+}
+input:hover{
+    background-color: rgb(83, 83, 83);
+} */
