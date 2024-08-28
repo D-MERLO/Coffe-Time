@@ -1,12 +1,14 @@
 form{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 30%;
+    justify-content:space-around;
+    width: 35vw;
     align-items: center;
 }
 .title{
     font-weight: bold;
+    font-size: 3rem;
+    margin-bottom: 20px;
 }
 .buttons{
     background: var(--color-yellow);
@@ -14,28 +16,33 @@ form{
     font-family: 'Candal';
     font-size: large;
     color: black;
-    width: 20rem;
+    width: 100%;
     padding: 5px ;
+    margin-top: 7px;
 }
 .marco {
     border: 2px solid black;
     position: relative;
     padding: 20px;
     margin: 6rem 2rem 3rem 2rem;
-    height: 160rem;
+    height: 50rem;
     overflow: visible;
 }
 .divForm{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 5rem;
+}
+.divInput{
+    width: 35vw;
 }
 .input{
-    width: 20rem;
+    width: 100%;
     border: 1.5px solid black;
     border-radius: 10px;
     padding: 0.5rem 1rem;
-    margin: 10px 5px;
+    margin: 7px 0;
 }
 .noRegister{
     margin: 50px 0 2px 0;
@@ -45,4 +52,26 @@ form{
     color: var(--color-yellow);
     font-size: larger;
     font-weight: 900;
+}
+.contorno1{
+    position: relative;
+    height: 13rem;
+    top: -25rem;
+    left: -25rem;
+}
+.contorno2{
+    position: relative;
+    height: 13rem;
+    top: -31rem;
+    left: -32rem;
+}
+.granosSupIzq{
+    position: relative;
+    height: 10rem;
+    top: -55rem;
+    left: -35rem;
+}
+.cafeFooter{
+    position: relative;
+top: -34rem;
 }

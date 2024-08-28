@@ -12,7 +12,8 @@ h3{
 
 #root{
     width: 100vw;
-    height: mim-content;
+    height: min-content;
+    /* height: 100vh; */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;

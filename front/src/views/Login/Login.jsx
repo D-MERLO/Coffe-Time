@@ -54,12 +54,12 @@ const Login = () => {
                 <h2 className={style.title}>¡Hola de nuevo!</h2>
                 <form onSubmit={handleSubmit}>
                     {[
-                        { name: "username", type: "text", placeholder:"Usuario" },
-                        { name: "password", type: "password", placeholder:"Contraseña" }
+                        { name: "username", type: "text", placeholder: "Usuario" },
+                        { name: "password", type: "password", placeholder: "Contraseña" }
                     ].map(({ name, type, placeholder }) => {
                         return (
-                            <div key={name}>
-                                <input className={style.input} type={type} onChange={handleChange} name={name} value={form[name]} placeholder={placeholder}/>
+                            <div className={style.divInput} key={name}>
+                                <input className={style.input} type={type} onChange={handleChange} name={name} value={form[name]} placeholder={placeholder} />
                                 {errors[name] && <span key={name}>{errors[name]}</span>}
                             </div>
                         )
@@ -69,7 +69,12 @@ const Login = () => {
                     <p className={style.noRegister}>¿No estás registrado aún?</p>
                     <Link to="/register" className={style.link}>Registrarse</Link>
                 </form>
+                <img className={style.contorno1} src="/contornoCafe1.svg" alt="mancha contorno taza de café" />
+                <img className={style.contorno2} src="/contornoCafe2.svg" alt="mancha contorno taza de café" />
+                <img className={style.granosSupIzq} src="/granosSI.svg" alt="granos de café" />
+                <img className={style.cafeFooter} src="/cafeFooter.svg" alt="mancha y granos de café" />
             </div>
+
         </div>
     )
 };
