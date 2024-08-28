@@ -44,31 +44,36 @@ const Register = () => {
     };
 
     return (
-        <div>
-            <h2 className={style.title} >Regístrate!</h2>
-            <form onSubmit={handleSubmit}>
-                {[
-                    {label: "NOMBRE", name: "name", type:"text"},
-                    {label: "CORREO", name: "email", type:"text"},
-                    {label: "DNI", name: "nDni", type:"text"},
-                    {label: "FECHA DE NACIMIENTO", name: "birthdate", type:"date"},
-                    {label: "USUARIO", name: "username", type:"text"},
-                    {label: "CONTRASEÑA", name: "password", type:"password"},
-                    {label: "REPETIR CONTRASEÑA", name: "repeatPassword", type:"password"}
-                ].map(({name, label, type}) => {
-                    return (
-                        <div key={name}>
-                            <label>{label}</label>
-                            <input className={style.input} type={type} onChange={handleChange} name={name} value={form[name]}/>
-                            {errors[name] && <span key={name}>{errors[name]}</span>}
-                        </div>
-                    )
-                })
-                }
-                 <button className={style.buttons} disabled={errors.name || errors.username || errors.password || errors.nDni || errors.email} type='submit'>Registrarse</button>
-            </form>
+        <div className={style.marco}>
+            <div className={style.divForm}>
+                <h2 className={style.title} >¡Bienvenido!</h2>
+                <form onSubmit={handleSubmit}>
+                    {[
+                        { placeholder: "Nombre", name: "name", type: "text" },
+                        { placeholder: "Correo", name: "email", type: "text" },
+                        { placeholder: "DNI", name: "nDni", type: "text" },
+                        { placeholder: "Fecha de nacimiento", name: "birthdate", type: "date" },
+                        { placeholder: "Usuario", name: "username", type: "text" },
+                        { placeholder: "Contraseña", name: "password", type: "password" },
+                        { placeholder: "Repetir contraseña", name: "repeatPassword", type: "password" }
+                    ].map(({ placeholder, name, type }) => {
+                        return (
+                            <div key={name} className={style.divInput}>
+                                <input className={style.input} type={type} onChange={handleChange} name={name} value={form[name]} placeholder={placeholder} />
+                                {errors[name] && <span key={name}>{errors[name]}</span>}
+                            </div>
+                        )
+                    })
+                    }
+                    <button className={style.buttons}disabled={errors.name || errors.username || errors.password || errors.nDni || errors.email} type='submit'>Registrarse</button>
+                </form>
+                <img className={style.contorno1} src="/contornoCafe1.svg" alt="mancha contorno taza de café" />
+                <img className={style.contorno2} src="/contornoCafe2.svg" alt="mancha contorno taza de café" />
+                <img className={style.granosSupIzq} src="/granosSI.svg" alt="granos de café" />
+                <img className={style.cafeFooter} src="/cafeFooter.svg" alt="mancha y granos de café" />
+            </div>
         </div>
-  )
+    )
 };
 
 export default Register;

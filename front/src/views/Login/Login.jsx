@@ -55,10 +55,10 @@ const Login = () => {
                 <form onSubmit={handleSubmit}>
                     {[
                         { name: "username", type: "text", placeholder: "Usuario" },
-                        { name: "password", type: "password", placeholder: "Contraseña" }
+                        { name: "password", type: "password", placeholder: "********" }
                     ].map(({ name, type, placeholder }) => {
                         return (
-                            <div className={style.divInput} key={name}>
+                            <div key={name} className={style.divInput}>
                                 <input className={style.input} type={type} onChange={handleChange} name={name} value={form[name]} placeholder={placeholder} />
                                 {errors[name] && <span key={name}>{errors[name]}</span>}
                             </div>
