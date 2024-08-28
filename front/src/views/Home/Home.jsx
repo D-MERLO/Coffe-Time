@@ -86,6 +86,7 @@ const Home = () => {
                     <img className={style.box2} src="/box2.svg" alt="box bombones" />
                     <h2 className={style.etiqueta4}>PARA REGALAR</h2>
                 </section>
+                <img className={style.cafeFooter} src="/cafeFooter.svg" alt="mancha y grano de café" />
             </div>
         </div>
     )

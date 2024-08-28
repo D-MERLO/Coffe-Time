@@ -5,14 +5,17 @@ form{
     width: 30%;
     align-items: center;
 }
-
+.title{
+    font-weight: bold;
+}
 .buttons{
     background: var(--color-yellow);
     border-radius: 20px;
     font-family: 'Candal';
-    font-size: x-large;
+    font-size: large;
     color: black;
     width: 20rem;
+    padding: 5px ;
 }
 .marco {
     border: 2px solid black;
@@ -35,8 +38,8 @@ form{
     margin: 10px 5px;
 }
 .noRegister{
-    margin: 10px 0;
-    font-size: large;
+    margin: 50px 0 2px 0;
+    font-size:x-large;
 }
 .link{
     color: var(--color-yellow);

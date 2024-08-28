@@ -66,7 +66,7 @@ const Login = () => {
                     })
                     }
                     <button className={style.buttons} disabled={errors.username || errors.password} >Iniciar sesión</button>
-                    <h3 className={style.noRegister}>¿No estás registrado aún?</h3>
+                    <p className={style.noRegister}>¿No estás registrado aún?</p>
                     <Link to="/register" className={style.link}>Registrarse</Link>
                 </form>
             </div>
